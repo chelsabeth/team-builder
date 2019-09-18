@@ -20,7 +20,7 @@ const TeamForm = props => {
             id: Date.now()
         };
 
-        props.addNewMemeber(newMember);
+        props.addNewMember(newMember);
         setList({ name: " ", email: " ", role: " "});
     };
 
