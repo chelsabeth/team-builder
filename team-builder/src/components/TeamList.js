@@ -1,13 +1,13 @@
 import React from "react";
 
 
-const Members = props => {
+const TeamList = props => {
     console.log(props);
     return (
-        <div>
-            {props.map(list => {
+        <div className="form-list">
+            {props.addNewMember.map(list => {
                 return (
-                    <div className="member" key={list.id}>
+                    <div className="list" key={list.id}>
                         <h2>{list.name}</h2>
                         <h2>{list.email}</h2>
                         <h2>{list.role}</h2>
@@ -19,10 +19,10 @@ const Members = props => {
 };
 
 
-export default Members;
+export default TeamList;
 
 
-// function TeamList() {
-//     const [lists, setLists] = useState();
-//     const addNewList
-//   };
+// // function TeamList() {
+// //     const [lists, setLists] = useState();
+// //     const addNewList
+// //   };

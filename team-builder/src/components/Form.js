@@ -3,9 +3,9 @@ import React, {useState} from "react";
 const TeamForm = props => {
     console.log(props);
     const [list, setList] = useState({
-        name: " ",
-        email: " ",
-        role: " "
+        name: "",
+        email: "",
+        role: ""
     });
 
     const ChangeHandler = event => {
@@ -21,7 +21,7 @@ const TeamForm = props => {
         };
 
         props.addNewMember(newMember);
-        setList({ name: " ", email: " ", role: " "});
+        setList({ name: "", email: "", role: ""});
     };
 
     return (
@@ -30,7 +30,7 @@ const TeamForm = props => {
         <input type="text" name="name" value={list.name}
         onChange={ChangeHandler}/>
         <lable htmlFor="email">Email</lable>
-        <imput type="text" name="email" value={list.email}
+        <input type="text" name="email" value={list.email}
         onChange={ChangeHandler}/>
         <label htmlFor="role">Role</label>
         <input type="text" name="role" value={list.role}
