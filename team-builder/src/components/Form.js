@@ -7,4 +7,19 @@ const TeamForm = props => {
         email: " ",
         role: " "
     });
+
+    const ChangeHandler = event => {
+        setList({...list, [event.target.name]: event.target.value })
+        console.log(event.target.name);
+    };
+
+    const SubmitForm = event => {
+        event.preventDefault();
+        const newTeam = {
+            ...list, 
+            id: Date.now()
+        };
+
+        
+    }
 }
