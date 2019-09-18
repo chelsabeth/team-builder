@@ -27,9 +27,16 @@ const TeamForm = props => {
     return (
         <form onSubmit={SubmitForm}>
         <label htmlFor="name">Name</label>
-        <input type="text" name="title" value={list.name}
+        <input type="text" name="name" value={list.name}
         onChange={ChangeHandler}/>
         <lable htmlFor="email">Email</lable>
+        <imput type="text" name="email" value={list.email}
+        onChange={ChangeHandler}/>
+        <label htmlFor="role">Role</label>
+        <input type="text" name="role" value={list.role}
+        onChange={ChangeHandler}/>
+        <button type="submit">Add Team Member</button>
         </form>
-    )
-}
+    );
+};
+export default TeamForm;
