@@ -15,11 +15,21 @@ const TeamForm = props => {
 
     const SubmitForm = event => {
         event.preventDefault();
-        const newTeam = {
+        const newMember = {
             ...list, 
             id: Date.now()
         };
 
-        
-    }
+        props.addNewMemeber(newMember);
+        setList({ name: " ", email: " ", role: " "});
+    };
+
+    return (
+        <form onSubmit={SubmitForm}>
+        <label htmlFor="name">Name</label>
+        <input type="text" name="title" value={list.name}
+        onChange={ChangeHandler}/>
+        <lable htmlFor="email">Email</lable>
+        </form>
+    )
 }
