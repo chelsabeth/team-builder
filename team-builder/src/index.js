@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import Form from "./components/Form";
 
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-function TeamList() {
-    const [lists, setLists] = useState();
-};
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

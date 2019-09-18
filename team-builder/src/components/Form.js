@@ -26,13 +26,13 @@ const TeamForm = props => {
 
     return (
         <form onSubmit={SubmitForm}>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Name: </label>
         <input type="text" name="name" value={list.name}
         onChange={ChangeHandler}/>
-        <lable htmlFor="email">Email</lable>
+        <lable htmlFor="email"> Email: </lable>
         <input type="text" name="email" value={list.email}
         onChange={ChangeHandler}/>
-        <label htmlFor="role">Role</label>
+        <label htmlFor="role"> Role: </label>
         <input type="text" name="role" value={list.role}
         onChange={ChangeHandler}/>
         <button type="submit">Add Team Member</button>
